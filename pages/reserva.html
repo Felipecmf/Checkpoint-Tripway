@@ -9,58 +9,66 @@
 </head>
 
 <body>
+
+    <header>
+        <img src="/images/reserva.jpg" alt="img-header"  width="1320" height="220">
+    </header>
+
     <main>
         <section>
-            <h1>Reserva</h1>
+            <h2>Reserva</h2>
 
             <form>
                 <label for="name">Nome Completo:</label>
                 <br>
-                <input type="text" id="name" placeholder="Ex: Tiago Ribeiro" />
+                <input type="text" id="name" placeholder="Ex: Tiago Ribeiro" required/>
                 <br>
                 <br>
                 <label for="email">Email:</label>
                 <br>
-                <input type="email" id="email" placeholder="Ex: user@user.com"/>
+                <input type="email" id="email" placeholder="Ex: user@user.com" required/>
                 <br>
                 <br>
                 <label for="carros">Destino:</label>
                 <br>
-                <select id="destino" name="destino">
+                <select id="destino" name="destino" required>
                     <option value="paris">Paris</option>
                     <option value="ny">Nova York</option>
                     <option value="sao-francisco" selected>São Francisco</option>
                 </select>
                 <br>
-                <p><b>Data</b></p>
-                <label for="ida">Ida:</label>
-                <input type="date" id="ida"/>
+                <p><b>Data:</b></p>
+                <label for="ida" >Ida:</label>
+                <input type="date" id="ida" required/>
                 <label for="Volta">Volta:</label>
-                <input type="date" id="volta"/>
+                <input type="date" id="volta" required/>
                 <br>
                 <br>
                 <label for="n-pessoas">Número de pessoas:</label>
                 <br>
-                <input type="number" id="n-pessoas"/>
+                <input type="number" id="n-pessoas" required/>
                 <br>
                 <br>
                 <label for="msg">Mensagem:</label>
                 <br>
-                <input type="text" id="msg" placeholder="Deixe uma observação aqui"/>
+                <input type="text" id="msg" placeholder="Deixe uma observação aqui" required/>
+                <br>
                 <br>
                 <br>
                 <button>FAZER RESERVA</button>
-
             </form>
             
             <br>
             <br>
 
-        <a href="index.html">Voltar</a>
+        <a href="/index.html">
+            <img src="/images/return.jpg" alt="return"  width="40" height="25">
+        </a>
+
       </section>
     </main>
     
-    
+
 </body>
 
 </html>
