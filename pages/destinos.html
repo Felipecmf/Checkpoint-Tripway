@@ -1,50 +1,74 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripWay: Destinos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/destinos.css">
 </head>
-<body style="font-family: Miranda">
+<body>
     <nav>
         <a href="../index.html">HOME</a>
-        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 20px;">
+        <ul>
             <li><a href="pacotes.html">Pacotes e Serviços</a></li>
             <li><a href="reserva.html">Reservas e Contato</a></li>
-        </ul>   
+        </ul>
     </nav>
+
     <header>
-        <h1>Bem-vindo ao Tripway</h1>
+        <h1>Destinos</h1>
         <p>Sua central de pacotes e planos de viagens</p>
     </header>
 
     <main>
-        <h1>Destinos</h1>
-            <p>Explore o mundo com destinos cuidadosamente selecionados para transformar sua viagem em uma experiência inesquecível. De cidades vibrantes a cenários encantadores, cada lugar oferece cultura, gastronomia e atrações únicas. Escolha seu próximo destino e prepare-se para viver momentos incríveis em lugares que vão ficar para sempre na memória.</p>
-        <section>
-            <h2>Paris</h2>
-            <p>Apaixone-se pela cidade da luz, repleta de romance, cultura e elegância em cada detalhe.</p>
-            <img src="../images/Paris.jpg" alt="Imagem de Paris" width="600px" height="400px">
-        </section>
-        <section>
-            <h2>Nova York</h2>
-            <p>Viva a energia vibrante de uma das cidades mais icônicas do mundo, onde tudo acontece.</p>
-            <img src="../images/NewYork.jpg" alt="Imagem de Nov York" width="600px" height="400px">
-        </section>
-        <section>
-            <h2>San Francisco</h2>
-            <p>Encante-se com paisagens únicas e um charme inesquecível à beira do Pacífico</p>
-            <img src="../images/SanFrancisco.jpg" alt="imagem de San Francisco" width="600px" height="400px">
-        </section>
-    <a href="../index.html">
-      <img src="../images/return.jpg" alt="return"  width="40" height="25">
-    </a>
+        <p id="intro-destinos">Explore o mundo com destinos cuidadosamente selecionados para transformar sua viagem em uma experiência inesquecível. De cidades vibrantes a cenários encantadores, cada lugar oferece cultura, gastronomia e atrações únicas.</p>
+
+        <div id="lista-destinos">
+
+            <article class="card-destino">
+                <div class="img-wrapper">
+                    <img src="../images/Paris.jpg" alt="Imagem de Paris">
+                </div>
+                <div class="card-body">
+                    <span class="badge-destino">Europa · França</span>
+                    <h2>Paris</h2>
+                    <p>Apaixone-se pela cidade da luz, repleta de romance, cultura e elegância em cada detalhe.</p>
+                </div>
+            </article>
+
+            <article class="card-destino">
+                <div class="img-wrapper">
+                    <img src="../images/NewYork.jpg" alt="Imagem de Nova York">
+                </div>
+                <div class="card-body">
+                    <span class="badge-destino">América · EUA</span>
+                    <h2>Nova York</h2>
+                    <p>Viva a energia vibrante de uma das cidades mais icônicas do mundo, onde tudo acontece.</p>
+                </div>
+            </article>
+
+            <article class="card-destino">
+                <div class="img-wrapper">
+                    <img src="../images/SanFrancisco.jpg" alt="Imagem de San Francisco">
+                </div>
+                <div class="card-body">
+                    <span class="badge-destino">América · EUA</span>
+                    <h2>San Francisco</h2>
+                    <p>Encante-se com paisagens únicas e um charme inesquecível à beira do Pacífico.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <a href="../index.html" class="btn-voltar">← Voltar para Home</a>
     </main>
+
     <footer>
-        <p>© 2026 Tripway. Todos os direitos reservados.</p>
+        <p>© 2026 TripWay. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

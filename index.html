@@ -1,51 +1,74 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripWay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body style="font-family: Miranda">
+<body>
     <nav>
-        <a href="index.html"></a>
-        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 20px;">
+        <a href="index.html" class="nav-logo">TripWay</a>
+        <ul>
             <li><a href="pages/destinos.html">Destinos</a></li>
             <li><a href="pages/pacotes.html">Pacotes e Serviços</a></li>
-            <li><a href="pages/reserva.html">Reserva e contato</a></li>
+            <li><a href="pages/reserva.html">Reserva e Contato</a></li>
         </ul>
     </nav>
+ 
     <header>
-        <h1>Bem-vindo ao Tripway</h1>
+        <h1>Bem-vindo ao TripWay</h1>
         <p>Sua central de pacotes e planos de viagens</p>
     </header>
+ 
     <main>
-        <div>
+        <div id="sobre-nos">
             <h2>Sobre nós</h2>
-            <p>Somos uma empresa que busca facilitar aquela viagem de fim de ano, com os melhores preços possíveis e com as melhores promoções!</p>
+            <p>Somos uma empresa que busca facilitar aquela viagem de fim de ano, com os melhores preços possíveis e com as melhores promoções. Deixe-nos cuidar de cada detalhe para que você viva experiências inesquecíveis.</p>
         </div>
-        <section style="display: flex; list-style: none; margin: 0; padding: 0; gap: 20px;">
-            <a href="pages/destinos.html">
-                <h3>Destinos</h3>
-                <p>Escolha o seu destino perfeito aqui!</p>
-                <img src="images/viagem.jpg" alt="Viagem" width="300px" height="200px">
-            </a>
-            <a href="pages/pacotes.html">
-                <h3>Pacotes e Serviços</h3>
-                <p>Veja os nossos pacotes e serviços disponíveis aqui</p>
-                <img src="images/pacotes.jpg" alt="Pacotes" width="300px" height="200px">
-            </a>
-            <a href="pages/reserva.html">
-                <h3>Reserva e Contato</h3>
-                <p>Preencha seus dados e faça sua reserva aqui</p>
-                <img src="images/Contato.jpg" alt="Contato" width="300px" height="200px">
-            </a>
+ 
+        <section id="destaques">
+            <h2 class="titulo-secao">Explore o que oferecemos</h2>
+            <p class="subtitulo-secao">Tudo que você precisa para planejar sua próxima viagem em um só lugar.</p>
+ 
+            <div class="cards-container">
+                <a href="pages/destinos.html" class="card card-home">
+                    <img src="images/viagem.jpg" alt="Destinos de viagem">
+                    <div class="card-body">
+                        <h3>Destinos</h3>
+                        <p>Escolha o seu destino perfeito entre nossas opções selecionadas ao redor do mundo.</p>
+                    </div>
+                </a>
+                <a href="pages/pacotes.html" class="card card-home">
+                    <img src="images/pacotes.jpg" alt="Pacotes de viagem">
+                    <div class="card-body">
+                        <h3>Pacotes e Serviços</h3>
+                        <p>Veja os nossos pacotes e serviços disponíveis para cada tipo de viajante.</p>
+                    </div>
+                </a>
+                <a href="pages/reserva.html" class="card card-home">
+                    <img src="images/Contato.jpg" alt="Reserva e Contato">
+                    <div class="card-body">
+                        <h3>Reserva e Contato</h3>
+                        <p>Preencha seus dados e faça sua reserva com facilidade e segurança.</p>
+                    </div>
+                </a>
+            </div>
         </section>
+ 
+        <div class="cta-container">
+            <h2>Pronto para sua próxima aventura?</h2>
+            <p>Explore nossos destinos e encontre o pacote ideal para você.</p>
+            <a href="pages/destinos.html" class="btn">Ver Destinos</a>
+        </div>
     </main>
+ 
     <footer>
-        <p>© 2026 Tripway. Todos os direitos reservados.</p>
+        <p>© 2026 TripWay. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
