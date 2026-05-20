@@ -39,17 +39,20 @@ textarea {
   margin-top: 0.5rem;
 }
 
-.img-final {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.5rem;
-}
 
 .img-final img {
   width: 100%;
   max-width: 700px;
   border-radius: var(--raio);
 }
+
+
+.img-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
 
 @media (max-width: 768px) {
 
