@@ -5,7 +5,10 @@
 }
 
 :root {
-  --cor-primaria: #1a6b8a;
+  --fonte-titulo: 'Playfair Display', 'Georgia', serif;
+  --fonte-corpo: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+
+    --cor-primaria: #1a6b8a;
   --cor-primaria-escura: #0f4d66;
   --cor-acento: #f0a500;
   --cor-acento-hover: #d49000;
@@ -17,16 +20,11 @@
   --cor-borda: #d0dde5;
   --cor-card-hover: #e2eff5;
 
-  --fonte-titulo: 'Playfair Display', 'Georgia', serif;
-  --fonte-corpo: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-
+  --transicao: 0.3s ease;
   --sombra-card: 0 4px 16px rgba(26, 107, 138, 0.12);
   --sombra-card-hover: 0 8px 32px rgba(26, 107, 138, 0.22);
   --raio: 12px;
   --raio-pequeno: 6px;
-
-  --transicao: 0.3s ease;
-
   --max-largura: 1200px;
   --padding-secao: 3rem 1.5rem;
 }
