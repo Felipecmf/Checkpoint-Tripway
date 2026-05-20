@@ -2,89 +2,123 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pacotes de Viagem</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pacotes.css">
 </head>
-  <body>
-      <nav>
-        <a href="../index.html">HOME</a>
-        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 20px;">
-            <li><a href="destinos.html">Destinos</a></li>
-            <li><a href="reserva.html">Reservas e Contato</a></li>
-        </ul>   
-    </nav>
-    <header>
-        <h1>Bem-vindo ao Tripway</h1>
-        <p>Sua central de pacotes e planos de viagens</p>
-    </header>
-  
-  <section>
-    <h1>Pacotes e Serviços</h1>
-    <h2>Paris 🇫🇷</h2>
-    <a href="destinos.html">
-    <img src="../images/Paris.jpg" alt="Imagem de Paris" width="600px" height="400px">
-    </a>
-    <div>
-      <h3>Pacote Básico</h3>
-      <p>Hospedagem simples + café da manhã</p>
-    </div>
 
-    <div>
-      <h3>Pacote Intermediário</h3>
-      <p>Hotel 3 estrelas + passeios inclusos</p>
-    </div>
+<body>
 
-    <div>
-      <h3>Pacote Luxo</h3>
-      <p>Hotel 5 estrelas + experiências VIP</p>
-    </div>
-  </section>
+  <nav>
+    <a href="../index.html">HOME</a>
 
-  <section>
-    <h2>São Francisco 🇺🇸</h2>
-    <a href="destinos.html">
-    <img src="../images/NewYork.jpg" alt="Imagem de Nov York" width="600px" height="400px">
-    </a>
-    <div>
-      <h3>Pacote Básico</h3>
-      <p>Hospedagem econômica</p>
-    </div>
+    <ul>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="reserva.html">Reservas e Contato</a></li>
+    </ul>
+  </nav>
 
-    <div>
-      <h3>Pacote Intermediário</h3>
-      <p>Hotel confortável + city tour</p>
-    </div>
+  <header class="banner">
+    <h1>Pacotes de Viagem</h1>
+    <p>Sua central de pacotes e planos de viagens</p>
+  </header>
 
-    <div>
-      <h3>Pacote Luxo</h3>
-      <p>Hotel premium + experiências exclusivas</p>
-    </div>
-  </section>
+  <main>
 
-  <section>
-    <h2>Nova York 🇺🇸</h2>
-    <a href="destinos.html">
-    <img src="../images/SanFrancisco.jpg" alt="imagem de San Francisco" width="600px" height="400px">
-    </a>
-    <div>
-      <h3>Pacote Básico</h3>
-      <p>Hospedagem simples</p>
-    </div>
+    <section class="destino">
+      <h2>Paris 🇫🇷</h2>
 
-    <div>
-      <h3>Pacote Intermediário</h3>
-      <p>Hotel + atrações principais</p>
-    </div>
+      <a href="destinos.html">
+        <img src="../images/Paris.jpg" alt="Imagem de Paris">
+      </a>
 
-    <div>
-      <h3>Pacote Luxo</h3>
-      <p>Hotel 5 estrelas + Broadway VIP</p>
-    </div>
-  </section>
+      <div class="pacotes-container">
+
+        <div class="pacote-card">
+          <h3>Pacote Básico</h3>
+          <p>Hospedagem simples + café da manhã</p>
+        </div>
+
+        <div class="pacote-card">
+          <h3>Pacote Intermediário</h3>
+          <p>Hotel 3 estrelas + passeios inclusos</p>
+        </div>
+
+        <div class="pacote-card">
+          <h3>Pacote Luxo</h3>
+          <p>Hotel 5 estrelas + experiências VIP</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="destino">
+      <h2>São Francisco 🇺🇸</h2>
+
+      <a href="destinos.html">
+        <img src="../images/SanFrancisco.jpg" alt="Imagem de São Francisco">
+      </a>
+
+      <div class="pacotes-container">
+
+        <div class="pacote-card">
+          <h3>Pacote Básico</h3>
+          <p>Hospedagem econômica</p>
+        </div>
+
+        <div class="pacote-card">
+          <h3>Pacote Intermediário</h3>
+          <p>Hotel confortável + city tour</p>
+        </div>
+
+        <div class="pacote-card">
+          <h3>Pacote Luxo</h3>
+          <p>Hotel premium + experiências exclusivas</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="destino">
+      <h2>Nova York 🇺🇸</h2>
+
+      <a href="destinos.html">
+        <img src="../images/NewYork.jpg" alt="Imagem de Nova York">
+      </a>
+
+      <div class="pacotes-container">
+
+        <div class="pacote-card">
+          <h3>Pacote Básico</h3>
+          <p>Hospedagem simples</p>
+        </div>
+
+        <div class="pacote-card">
+          <h3>Pacote Intermediário</h3>
+          <p>Hotel + atrações principais</p>
+        </div>
+
+        <div class="pacote-card">
+          <h3>Pacote Luxo</h3>
+          <p>Hotel 5 estrelas + Broadway VIP</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="voltar">
     <a href="../index.html">
-      <img src="../images/return.jpg" alt="return"  width="40" height="25">
+      <img src="../images/return.jpg" alt="Voltar">
     </a>
+  </div>
+
+  <footer>
+    <p>© 2026 Tripway. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
-    <footer>
-        <p>© 2026 Tripway. Todos os direitos reservados.</p>
-    </footer>
 </html>
