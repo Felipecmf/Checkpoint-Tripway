@@ -182,16 +182,16 @@ textarea {
   font-weight: 700;
 }
 
-.btn-voltar:hover {
-  color: var(--cor-acento);
-}
-
 footer {
   background-color: var(--cor-primaria-escura);
   color: rgba(255,255,255,0.75);
   text-align: center;
   padding: 1.5rem 1rem;
   margin-top: 3rem;
+}
+
+.btn-voltar:hover {
+  color: var(--cor-acento);
 }
 
 @media (max-width: 768px) {
