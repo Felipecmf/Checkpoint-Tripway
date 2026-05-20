@@ -5,58 +5,68 @@ body {
   }
 
   /* NAVBAR */  
-  nav a.logo {
-    font-family: var(--fonte-display);
+  nav {
+    background-color: var(--cor-primaria-escura);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+  }
+  
+  nav a.nav-logo {
+    font-family: var(--fonte-titulo);
     font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-  }
-  nav a.logo span { color: var(--cor-acento); }
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 0.25rem;
-  }
-  nav ul a {
-    color: rgba(255,255,255,0.78);
-    text-decoration: none;
-    font-size: 0.92rem;
-    font-weight: 500;
-    padding: 0.45rem 1rem;
-    border-radius: 8px;
-    transition: background var(--transicao), color var(--transicao);
-  }
-  nav ul a:hover {
-    background-color: rgba(255,255,255,0.12);
-    color: #fff;
+    font-weight: 700;
+    color: var(--cor-branco);
   }
   
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  nav a.nav-logo:hover {
+    color: var(--cor-acento);
   }
   
   nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
-  
-    margin: 0;
-    padding: 0;
+    gap: 2rem;
+    align-items: center;
   }
   
   nav ul li a {
-    transition: 0.3s;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color var(--transicao), border-color var(--transicao);
   }
   
   nav ul li a:hover {
-    color: #00bfff;
+    color: var(--cor-acento);
+    border-bottom-color: var(--cor-acento);
+  }
+  
+  nav > a:not(.nav-logo) {
+    color: rgba(255,255,255,0.88);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 0.4rem 0.8rem;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    border-radius: var(--raio-pequeno);
+    transition: all var(--transicao);
+  }
+  
+  nav > a:not(.nav-logo):hover {
+    background-color: var(--cor-acento);
+    border-color: var(--cor-acento);
+    color: var(--cor-branco);
   }
   
   /* HEADER */
-  
   .banner {
     text-align: center;
     padding: 50px 20px;
@@ -92,7 +102,6 @@ body {
   }
   
   /* PACOTES */
-  
   .pacotes-container {
     display: flex;
     gap: 20px;
@@ -119,7 +128,6 @@ body {
   }
   
   /* VOLTAR */
-  
   .voltar {
     text-align: center;
     margin: 30px 0;
@@ -130,11 +138,17 @@ body {
   }
   
   /* FOOTER */
-  
   footer {
-    background-color: #222;
-    color: white;
-  
+    background-color: var(--cor-primaria-escura);
+    color: rgba(255,255,255,0.75);
     text-align: center;
-    padding: 20px;
+    padding: 1.5rem 1rem;
+    font-size: 0.88rem;
+    letter-spacing: 0.02em;
+    margin-top: auto;
   }
+  
+  footer p {
+    margin: 0;
+  }
+  
