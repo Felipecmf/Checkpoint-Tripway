@@ -8,7 +8,7 @@
   --fonte-titulo: 'Playfair Display', 'Georgia', serif;
   --fonte-corpo: 'Lato', 'Helvetica Neue', Arial, sans-serif;
 
-    --cor-primaria: #1a6b8a;
+  --cor-primaria: #1a6b8a;
   --cor-primaria-escura: #0f4d66;
   --cor-acento: #f0a500;
   --cor-acento-hover: #d49000;
@@ -60,11 +60,7 @@ a:hover {
   color: var(--cor-acento);
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--fonte-titulo);
-  line-height: 1.25;
-  color: var(--cor-texto);
-}
+
 
 nav {
   background-color: var(--cor-primaria-escura);
@@ -78,6 +74,17 @@ nav {
   box-shadow: 0 2px 10px rgba(0,0,0,0.18);
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.25;
+  color: var(--cor-texto);
+}
+
+
+nav a.nav-logo:hover {
+  color: var(--cor-acento);
+}
+
 nav a.nav-logo {
   font-family: var(--fonte-titulo);
   font-size: 1.5rem;
@@ -85,9 +92,6 @@ nav a.nav-logo {
   color: var(--cor-branco);
 }
 
-nav a.nav-logo:hover {
-  color: var(--cor-acento);
-}
 
 nav ul {
   display: flex;
