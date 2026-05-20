@@ -5,16 +5,17 @@
 }
 
 :root {
-  --cor-primaria: #1a6b8a;
-  --cor-primaria-escura: #0f4d66;
-  --cor-acento: #f0a500;
-  --cor-acento-hover: #d49000;
-  --cor-fundo: #f7f4ef;
   --cor-fundo-alt: #eef4f7;
   --cor-texto: #1c2b35;
   --cor-texto-suave: #4a6070;
   --cor-branco: #ffffff;
   --cor-borda: #d0dde5;
+
+  --cor-primaria: #1a6b8a;
+  --cor-primaria-escura: #0f4d66;
+  --cor-acento: #f0a500;
+  --cor-acento-hover: #d49000;
+  --cor-fundo: #f7f4ef;
 
   --fonte-titulo: 'Playfair Display', serif;
   --fonte-corpo: 'Lato', sans-serif;
@@ -71,15 +72,15 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-header p {
-  font-size: 1.1rem;
-}
-
 main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
 }
 
 #texto-reserva {
