@@ -1,0 +1,68 @@
+#texto-reserva {
+  max-width: 70ch;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+}
+
+.reserva {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.formulario {
+  background-color: var(--cor-branco);
+  padding: 2rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-card);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.datas {
+  display: flex;
+  gap: 1rem;
+}
+
+.datas .form-grupo {
+  flex: 1;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.btn {
+  margin-top: 0.5rem;
+}
+
+
+.img-final img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: var(--raio);
+}
+
+
+.img-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+  .formulario {
+    padding: 1.5rem;
+  }
+
+  .datas {
+    flex-direction: column;
+    gap: 0;
+  }
+
+}
